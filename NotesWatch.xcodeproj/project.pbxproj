@@ -124,7 +124,7 @@
 			children = (
 				A5BF6D1A269E7965007CD9AA /* Model */,
 				A5BF6CFC269E7751007CD9AA /* NotesWatchApp.swift */,
-				A5BF6CFE269E7751007CD9AA /* ContentView.swift */,
+				A5BF6D1D269E79B9007CD9AA /* View */,
 				A5BF6D00269E7751007CD9AA /* NotificationController.swift */,
 				A5BF6D02269E7751007CD9AA /* NotificationView.swift */,
 				A5BF6D04269E7751007CD9AA /* ComplicationController.swift */,
@@ -150,6 +150,14 @@
 				A5BF6D1B269E7984007CD9AA /* Note.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A5BF6D1D269E79B9007CD9AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF6CFE269E7751007CD9AA /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
