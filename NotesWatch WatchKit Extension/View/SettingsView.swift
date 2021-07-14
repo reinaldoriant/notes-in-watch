@@ -25,7 +25,12 @@ struct SettingsView: View {
             Text("Lines: \(lineCount)".uppercased())
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             //slider
-            Slider(value: $value, in: 1...4, step: 1)
+            Slider(value: Binding(get:{
+                self.value
+            }, set: {(newValue) in
+                self.value = newValue
+                self.update()
+            }),in: 1...4, step: 1)
                 .accentColor(.accentColor)
         }
     }
