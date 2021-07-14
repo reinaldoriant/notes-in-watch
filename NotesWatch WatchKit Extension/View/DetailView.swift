@@ -15,6 +15,7 @@ struct DetailView: View {
     let index: Int
     
     @State private var isCreditsPresented: Bool = false
+    @State private var isSettingsPresenter: Bool = false
     
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 3) {
@@ -35,6 +36,12 @@ struct DetailView: View {
             HStack(alignment: .center){
                 Image(systemName: "gear")
                     .imageScale(.large)
+                    .onTapGesture {
+                        isSettingsPresenter.toggle()
+                    }
+                    .sheet(isPresented: $isSettingsPresenter, content: {
+                        SettingsView()
+                    })
                 
                 Spacer()
                 

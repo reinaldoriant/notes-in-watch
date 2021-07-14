@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5604EBE269E947600172B83 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5604EBD269E947600172B83 /* SettingsView.swift */; };
 		A5BF6CEC269E774E007CD9AA /* NotesWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A5BF6CEB269E774E007CD9AA /* NotesWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5BF6CF1269E7751007CD9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BF6CF0269E7751007CD9AA /* Assets.xcassets */; };
 		A5BF6CF8269E7751007CD9AA /* NotesWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5BF6CF7269E7751007CD9AA /* NotesWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5BF6CFD269E7751007CD9AA /* NotesWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF6CFC269E7751007CD9AA /* NotesWatchApp.swift */; };
 		A5BF6CFF269E7751007CD9AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF6CFE269E7751007CD9AA /* ContentView.swift */; };
-		A5BF6D01269E7751007CD9AA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF6D00269E7751007CD9AA /* NotificationController.swift */; };
-		A5BF6D03269E7751007CD9AA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF6D02269E7751007CD9AA /* NotificationView.swift */; };
 		A5BF6D05269E7751007CD9AA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF6D04269E7751007CD9AA /* ComplicationController.swift */; };
 		A5BF6D07269E7752007CD9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BF6D06269E7752007CD9AA /* Assets.xcassets */; };
 		A5BF6D0A269E7752007CD9AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BF6D09269E7752007CD9AA /* Preview Assets.xcassets */; };
@@ -66,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A5604EBD269E947600172B83 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A5BF6CE7269E774E007CD9AA /* NotesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BF6CEB269E774E007CD9AA /* NotesWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotesWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BF6CF0269E7751007CD9AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,8 +73,6 @@
 		A5BF6CF7269E7751007CD9AA /* NotesWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NotesWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BF6CFC269E7751007CD9AA /* NotesWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesWatchApp.swift; sourceTree = "<group>"; };
 		A5BF6CFE269E7751007CD9AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A5BF6D00269E7751007CD9AA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		A5BF6D02269E7751007CD9AA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		A5BF6D04269E7751007CD9AA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		A5BF6D06269E7752007CD9AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BF6D09269E7752007CD9AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -132,8 +130,6 @@
 				A5BF6D1A269E7965007CD9AA /* Model */,
 				A5BF6CFC269E7751007CD9AA /* NotesWatchApp.swift */,
 				A5BF6D1D269E79B9007CD9AA /* View */,
-				A5BF6D00269E7751007CD9AA /* NotificationController.swift */,
-				A5BF6D02269E7751007CD9AA /* NotificationView.swift */,
 				A5BF6D04269E7751007CD9AA /* ComplicationController.swift */,
 				A5BF6D06269E7752007CD9AA /* Assets.xcassets */,
 				A5BF6D0B269E7752007CD9AA /* Info.plist */,
@@ -165,6 +161,7 @@
 				A5BF6CFE269E7751007CD9AA /* ContentView.swift */,
 				A5BF6D1E269E8642007CD9AA /* DetailView.swift */,
 				A5BF6D20269E88F6007CD9AA /* CreditsView.swift */,
+				A5604EBD269E947600172B83 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,14 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5BF6D01269E7751007CD9AA /* NotificationController.swift in Sources */,
 				A5BF6D24269E8950007CD9AA /* HeaderView.swift in Sources */,
 				A5BF6CFF269E7751007CD9AA /* ContentView.swift in Sources */,
 				A5BF6D05269E7751007CD9AA /* ComplicationController.swift in Sources */,
 				A5BF6D1F269E8642007CD9AA /* DetailView.swift in Sources */,
+				A5604EBE269E947600172B83 /* SettingsView.swift in Sources */,
 				A5BF6CFD269E7751007CD9AA /* NotesWatchApp.swift in Sources */,
 				A5BF6D21269E88F6007CD9AA /* CreditsView.swift in Sources */,
-				A5BF6D03269E7751007CD9AA /* NotificationView.swift in Sources */,
 				A5BF6D1C269E7984007CD9AA /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
