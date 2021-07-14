@@ -17,6 +17,7 @@
 		A5BF6D05269E7751007CD9AA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF6D04269E7751007CD9AA /* ComplicationController.swift */; };
 		A5BF6D07269E7752007CD9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BF6D06269E7752007CD9AA /* Assets.xcassets */; };
 		A5BF6D0A269E7752007CD9AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BF6D09269E7752007CD9AA /* Preview Assets.xcassets */; };
+		A5BF6D1C269E7984007CD9AA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF6D1B269E7984007CD9AA /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		A5BF6D09269E7752007CD9AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5BF6D0B269E7752007CD9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5BF6D0C269E7752007CD9AA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A5BF6D1B269E7984007CD9AA /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		A5BF6CFB269E7751007CD9AA /* NotesWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A5BF6D1A269E7965007CD9AA /* Model */,
 				A5BF6CFC269E7751007CD9AA /* NotesWatchApp.swift */,
 				A5BF6CFE269E7751007CD9AA /* ContentView.swift */,
 				A5BF6D00269E7751007CD9AA /* NotificationController.swift */,
@@ -139,6 +142,14 @@
 				A5BF6D09269E7752007CD9AA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A5BF6D1A269E7965007CD9AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF6D1B269E7984007CD9AA /* Note.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 				A5BF6D05269E7751007CD9AA /* ComplicationController.swift in Sources */,
 				A5BF6CFD269E7751007CD9AA /* NotesWatchApp.swift in Sources */,
 				A5BF6D03269E7751007CD9AA /* NotificationView.swift in Sources */,
+				A5BF6D1C269E7984007CD9AA /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
