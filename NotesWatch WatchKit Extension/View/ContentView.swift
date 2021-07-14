@@ -35,16 +35,18 @@ struct ContentView: View {
     }
     
     func load(){
-        do{
-            //1. get the notes URL Path
-            let url = getDocumentDirectory().appendingPathComponent("notes")
-            //2. create a new property for the data
-            let data = try Data(contentsOf: url)
-            //3. Decode the data
-            notes = try JSONDecoder().decode([Note].self, from: data)
-        }
-        catch{
-            //Do Nothing
+        DispatchQueue.main.async {
+            do{
+                //1. get the notes URL Path
+                let url = getDocumentDirectory().appendingPathComponent("notes")
+                //2. create a new property for the data
+                let data = try Data(contentsOf: url)
+                //3. Decode the data
+                notes = try JSONDecoder().decode([Note].self, from: data)
+            }
+            catch{
+                //Do Nothing
+            }
         }
     }
     
@@ -81,6 +83,9 @@ struct ContentView: View {
         }//: Vstack
         
         .navigationTitle("Notes")
+        .onAppear(perform: {
+            load()
+        })
     }
 }
 
