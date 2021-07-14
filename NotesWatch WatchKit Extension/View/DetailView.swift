@@ -16,17 +16,7 @@ struct DetailView: View {
     
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 3) {
-            //HEader
-            HStack{
-                Capsule()
-                    .frame(height: 1)
-                
-                Image(systemName: "note.text")
-                
-                Capsule()
-                    .frame(height: 1)
-            }
-            .foregroundColor(.accentColor)
+           
             //content
             Spacer()
             
